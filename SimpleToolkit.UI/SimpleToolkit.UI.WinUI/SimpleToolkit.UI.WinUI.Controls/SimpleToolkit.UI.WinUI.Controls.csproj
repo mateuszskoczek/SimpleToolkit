@@ -7,6 +7,8 @@
 		<EnableWindowsTargeting>true</EnableWindowsTargeting>
 		<UseWinUI>true</UseWinUI>
 		<UseRidGraph>true</UseRidGraph>
+		<EnablePreviewMsixTooling>true</EnablePreviewMsixTooling>
+		<GenerateLibraryLayout>true</GenerateLibraryLayout>
 	</PropertyGroup>
 	<ItemGroup>
 		<None Remove="TimeSpanControl.xaml" />
