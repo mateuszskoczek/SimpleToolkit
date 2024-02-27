@@ -9,7 +9,6 @@
 		<UseRidGraph>true</UseRidGraph>
 		<EnablePreviewMsixTooling>true</EnablePreviewMsixTooling>
 		<GenerateLibraryLayout>true</GenerateLibraryLayout>
-		<Version />
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 	</PropertyGroup>
 	<ItemGroup>
@@ -23,10 +22,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="GitVersion.MsBuild" Version="5.12.0">
-		  <PrivateAssets>all</PrivateAssets>
-		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-		</PackageReference>
 		<PackageReference Include="Microsoft.WindowsAppSDK" Version="1.4.240211001" />
 		<PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22621.2428" />
 	</ItemGroup>
