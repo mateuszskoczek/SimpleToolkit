@@ -10,9 +10,6 @@
 		<EnableCoreMrtTooling Condition=" '$(BuildingInsideVisualStudio)' != 'true' ">false</EnableCoreMrtTooling>
 	</PropertyGroup>
 	<ItemGroup>
-	  <None Remove="TimeSpanControl.xaml" />
-	</ItemGroup>
-	<ItemGroup>
 	  <None Include="..\..\..\README.md">
 	    <Pack>True</Pack>
 	    <PackagePath>\</PackagePath>
@@ -22,11 +19,5 @@
 	<ItemGroup>
 		<PackageReference Include="Microsoft.WindowsAppSDK" Version="1.4.240211001" />
 		<PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22621.2428" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Page Update="TimeSpanControl.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </Page>
 	</ItemGroup>
 </Project>
