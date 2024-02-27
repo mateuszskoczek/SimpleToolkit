@@ -1,3 +1,4 @@
+next-version: 1.0
 assembly-versioning-scheme: MajorMinor
 assembly-file-versioning-scheme: MajorMinor
 mode: ContinuousDeployment
