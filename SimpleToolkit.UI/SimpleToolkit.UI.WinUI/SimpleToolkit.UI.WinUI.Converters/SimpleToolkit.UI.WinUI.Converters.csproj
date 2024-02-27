@@ -7,6 +7,7 @@
     <UseWinUI>true</UseWinUI>
 	<UseRidGraph>true</UseRidGraph>
 	<PackageReadmeFile>README.md</PackageReadmeFile>
+	<EnableCoreMrtTooling Condition=" '$(BuildingInsideVisualStudio)' != 'true' ">false</EnableCoreMrtTooling>
   </PropertyGroup>
   <ItemGroup>
     <None Include="..\..\..\README.md">
@@ -16,7 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-      <PackageReference Include="Microsoft.Bcl.Build" Version="1.0.21" />
       <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.4.240211001" />
       <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22621.2428" />
   </ItemGroup>
