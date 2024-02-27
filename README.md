@@ -2,6 +2,12 @@
 
 SimpleToolkit is a set of helpers, models, controls, etc. used in my other C# projects.
 
+## Status
+
+| NuGet Gallery |
+| ------------- |
+| [![NuGet version (SimpleToolkit)](https://img.shields.io/nuget/v/SimpleToolkit.Extensions.svg?style=flat-square)](https://www.nuget.org/packages/SimpleToolkit.Extensions/) |
+
 ## Contents
 
 ### Extensions
