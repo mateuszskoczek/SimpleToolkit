@@ -11,7 +11,7 @@
 		<GenerateLibraryLayout>true</GenerateLibraryLayout>
 	</PropertyGroup>
 	<ItemGroup>
-		<None Remove="TimeSpanControl.xaml" />
+	  <None Remove="TimeSpanControl.xaml" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -20,8 +20,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<Page Update="TimeSpanControl.xaml">
-			<Generator>MSBuild:Compile</Generator>
-		</Page>
+	  <Page Update="TimeSpanControl.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </Page>
 	</ItemGroup>
 </Project>
