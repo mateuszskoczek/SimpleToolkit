@@ -32,4 +32,5 @@ SimpleToolkit is a set of helpers, models, controls, etc. used in my other C# pr
 ### UI.WinUI.Controls
 
 * TimeSpanControl - allows to select TimeSpan
+
 ![alt text](https://raw.githubusercontent.com/mateuszskoczek/SimpleToolkit/master/.github/images/timespancontrol.png)
