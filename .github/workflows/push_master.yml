@@ -3,6 +3,8 @@ name: Build and publish NuGet package
 
 on:
   push:
+    paths:
+    - 'SimpleToolkit**'
     branches:
     - "master"
 
