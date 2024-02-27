@@ -97,6 +97,13 @@ namespace SimpleToolkit.UI.WinUI.Controls
             _minutes.ValueChanged += ValueChanged;
             baseControl.Children.Add(_minutes);
 
+            baseControl.Children.Add(new TextBlock
+            {
+                VerticalAlignment = VerticalAlignment.Center,
+                Padding = new Thickness(0, 0, 0, 5),
+                Text = ":"
+            });
+
             _seconds = new NumberBox
             {
                 SpinButtonPlacementMode = NumberBoxSpinButtonPlacementMode.Compact,
@@ -106,13 +113,6 @@ namespace SimpleToolkit.UI.WinUI.Controls
             };
             _seconds.ValueChanged += ValueChanged;
             baseControl.Children.Add(_seconds);
-
-            baseControl.Children.Add(new TextBlock
-            {
-                VerticalAlignment = VerticalAlignment.Center,
-                Padding = new Thickness(0, 0, 0, 5),
-                Text = ":"
-            });
 
             base.Content = baseControl;
         }
