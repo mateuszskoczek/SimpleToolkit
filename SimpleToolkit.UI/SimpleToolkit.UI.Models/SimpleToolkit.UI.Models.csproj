@@ -5,6 +5,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+	  <Company>mateuszskoczek</Company>
+	  <PackageProjectUrl>https://github.com/mateuszskoczek/SimpleToolkit</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>

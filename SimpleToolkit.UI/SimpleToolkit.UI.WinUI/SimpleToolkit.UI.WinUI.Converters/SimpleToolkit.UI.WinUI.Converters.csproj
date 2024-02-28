@@ -8,6 +8,8 @@
 	<UseRidGraph>true</UseRidGraph>
 	<PackageReadmeFile>README.md</PackageReadmeFile>
 	<EnableCoreMrtTooling Condition=" '$(BuildingInsideVisualStudio)' != 'true' ">false</EnableCoreMrtTooling>
+	  <Company>mateuszskoczek</Company>
+	  <PackageProjectUrl>https://github.com/mateuszskoczek/SimpleToolkit</PackageProjectUrl>
   </PropertyGroup>
   <ItemGroup>
     <None Include="..\..\..\README.md">
