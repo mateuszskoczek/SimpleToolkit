@@ -1,19 +1,24 @@
-name: Pull request build
+name: Build NuGet package on master pull request
+
 
 on:
   pull_request:
-    branches: [ "master" ]
+    branches:
+    - "master"
+    paths:
+    - "SimpleToolkit**"
+
 
 jobs:
-  Build:
-    runs-on: ubuntu-latest
+  build:
+    name: Build 
+    runs-on: windows-latest
     steps:
-    - uses: actions/checkout@v3
+    - name: Checkout
+      uses: actions/checkout@v3
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: 8.0.x
-    - name: Restore dependencies
-      run: dotnet restore
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build
