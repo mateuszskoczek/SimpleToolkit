@@ -118,7 +118,7 @@ namespace SimpleToolkit.UI.WinUI.Controls
             };
             _seconds.ValueChanged += ValueChanged;
             Children.Add(_seconds);
-            SetColumn(_seconds, 2);
+            SetColumn(_seconds, 4);
         }
 
         protected void UpdateOnChanges()
