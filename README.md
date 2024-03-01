@@ -16,6 +16,10 @@ SimpleToolkit is a set of helpers, models, controls, etc. used in my other C# pr
     - (static) CreateRandom - returns random string
     - Shuffle - returns shuffled string
 
+### Attributes
+
+* RequiresClaimAttribute - returns Forbidden result, when claim is not present
+
 ### UI.Models
 
 * NavigationViewItem - model which can be used to implement NavigationViewService-less navigation in MVVM
