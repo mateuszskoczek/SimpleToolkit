@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SimpleToolkit.UI.WinUI.Controls
 {
-    public class TimeSpanControl : ContentControl
+    public class TimeSpanControl : Grid
     {
         #region FIELDS
 
@@ -21,8 +21,6 @@ namespace SimpleToolkit.UI.WinUI.Controls
 
 
         #region PROPERTIES
-
-        protected new ContentControl Content { get; set; }
 
         public TimeSpan Value
         {
@@ -65,11 +63,12 @@ namespace SimpleToolkit.UI.WinUI.Controls
 
         protected void Build()
         {
-            StackPanel baseControl = new StackPanel
-            {
-                Orientation = Orientation.Horizontal,
-                Spacing = 4
-            };
+            this.ColumnSpacing = 4;
+            this.ColumnDefinitions.Add(new ColumnDefinition());
+            this.ColumnDefinitions.Add(new ColumnDefinition() { Width = GridLength.Auto });
+            this.ColumnDefinitions.Add(new ColumnDefinition() { Width = GridLength.Auto });
+            this.ColumnDefinitions.Add(new ColumnDefinition() { Width = GridLength.Auto });
+            this.ColumnDefinitions.Add(new ColumnDefinition() { Width = GridLength.Auto });
 
             _hours = new NumberBox
             {
@@ -78,14 +77,17 @@ namespace SimpleToolkit.UI.WinUI.Controls
                 Value = 0,
             };
             _hours.ValueChanged += ValueChanged;
-            baseControl.Children.Add(_hours);
+            Children.Add(_hours);
+            SetColumn(_hours, 0);
 
-            baseControl.Children.Add(new TextBlock
+            TextBlock sep1 = new TextBlock
             {
                 VerticalAlignment = VerticalAlignment.Center,
                 Padding = new Thickness(0, 0, 0, 5),
                 Text = ":"
-            });
+            };
+            Children.Add(sep1);
+            SetColumn(sep1, 1);
 
             _minutes = new NumberBox
             {
@@ -95,14 +97,17 @@ namespace SimpleToolkit.UI.WinUI.Controls
                 Value = 0,
             };
             _minutes.ValueChanged += ValueChanged;
-            baseControl.Children.Add(_minutes);
+            Children.Add(_minutes);
+            SetColumn(_minutes, 2);
 
-            baseControl.Children.Add(new TextBlock
+            TextBlock sep2 = new TextBlock
             {
                 VerticalAlignment = VerticalAlignment.Center,
                 Padding = new Thickness(0, 0, 0, 5),
                 Text = ":"
-            });
+            };
+            Children.Add(sep2);
+            SetColumn(sep2, 3);
 
             _seconds = new NumberBox
             {
@@ -112,9 +117,8 @@ namespace SimpleToolkit.UI.WinUI.Controls
                 Value = 0,
             };
             _seconds.ValueChanged += ValueChanged;
-            baseControl.Children.Add(_seconds);
-
-            base.Content = baseControl;
+            Children.Add(_seconds);
+            SetColumn(_seconds, 2);
         }
 
         protected void UpdateOnChanges()
