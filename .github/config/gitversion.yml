@@ -1,11 +1,11 @@
-next-version: 1.0
-assembly-versioning-scheme: MajorMinor
-assembly-file-versioning-scheme: MajorMinor
+next-version: 1.6.0
+assembly-versioning-scheme: MajorMinorPatch
+assembly-file-versioning-scheme: MajorMinorPatch
 
 branches:
   master:
     regex: ^master$
     mode: ContinuousDelivery
-    increment: Minor
+    increment: Patch
     tag: ''
     is-release-branch: true
