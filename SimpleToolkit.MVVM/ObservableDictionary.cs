@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SimpleToolkit.MVVM
 {
-    internal class ObservableDictionary<TKey, TValue> : ObservableCollection<ObservableKeyValuePair<TKey, TValue>>, IDictionary<TKey, TValue>
+    public class ObservableDictionary<TKey, TValue> : ObservableCollection<ObservableKeyValuePair<TKey, TValue>>, IDictionary<TKey, TValue>
     {
         #region PROPERTIES
 
