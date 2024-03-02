@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	  <PackageReadmeFile>README.md</PackageReadmeFile>
+	  <Company>mateuszskoczek</Company>
+	  <PackageProjectUrl>https://github.com/mateuszskoczek/SimpleToolkit</PackageProjectUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+	  <None Include="..\README.md">
+		  <Pack>True</Pack>
+		  <PackagePath>\</PackagePath>
+	  </None>
+  </ItemGroup>
+
+</Project>
