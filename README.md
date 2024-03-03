@@ -22,7 +22,7 @@ SimpleToolkit is a set of helpers, models, controls, etc. used in my other C# pr
     - (static) CreateRandom - returns random string
     - Shuffle - returns shuffled string
 * HttpClientExtensions
-    - GetStreamAsync - allows to track progress of downloading data
+    - DownloadAsync - allows to track progress of downloading data
 * StreamExtensions
     - CopyToAsync - allows to track progress of copying data
 

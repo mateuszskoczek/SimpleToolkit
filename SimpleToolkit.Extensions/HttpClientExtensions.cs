@@ -8,9 +8,8 @@ namespace SimpleToolkit.Extensions
 {
     public static class HttpClientExtensions
     {
-        public static async Task<Stream> GetStreamAsync(this HttpClient client, string requestUri, CancellationToken cancellationToken = default, IProgress<double> progress = null)
+        public static async Task DownloadAsync(this HttpClient client, string requestUri, Stream destination, CancellationToken cancellationToken = default, IProgress<double> progress = null)
         {
-            MemoryStream destination = new MemoryStream();
             using (HttpResponseMessage response = await client.GetAsync(requestUri, HttpCompletionOption.ResponseHeadersRead))
             {
                 long? contentLength = response.Content.Headers.ContentLength;
@@ -20,7 +19,7 @@ namespace SimpleToolkit.Extensions
                     if (progress == null || !contentLength.HasValue)
                     {
                         await download.CopyToAsync(destination);
-                        return destination;
+                        return;
                     }
 
                     var relativeProgress = new Progress<long>(totalBytes => progress.Report((double)totalBytes * 100 / contentLength.Value));
@@ -28,7 +27,6 @@ namespace SimpleToolkit.Extensions
                     progress.Report(100);
                 }
             }
-            return destination;
         }
     }
 }
