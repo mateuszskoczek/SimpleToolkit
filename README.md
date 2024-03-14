@@ -13,6 +13,7 @@ SimpleToolkit is a set of helpers, models, controls, etc. used in my other C# pr
 | UI.WinUI.Behaviors | [![NuGet version (SimpleToolkit.UI.WinUI.Behaviors)](https://img.shields.io/nuget/v/SimpleToolkit.UI.WinUI.Behaviors.svg?style=flat-square)](https://www.nuget.org/packages/SimpleToolkit.UI.WinUI.Behaviors/) |
 | UI.WinUI.Converters | [![NuGet version (SimpleToolkit.UI.WinUI.Converters)](https://img.shields.io/nuget/v/SimpleToolkit.UI.WinUI.Converters.svg?style=flat-square)](https://www.nuget.org/packages/SimpleToolkit.UI.WinUI.Converters/) |
 | UI.WinUI.Controls | [![NuGet version (SimpleToolkit.UI.WinUI.Controls)](https://img.shields.io/nuget/v/SimpleToolkit.UI.WinUI.Controls.svg?style=flat-square)](https://www.nuget.org/packages/SimpleToolkit.UI.WinUI.Controls/) |
+| UI.WinUI.Helpers | [![NuGet version (SimpleToolkit.UI.WinUI.Helpers)](https://img.shields.io/nuget/v/SimpleToolkit.UI.WinUI.Helpers.svg?style=flat-square)](https://www.nuget.org/packages/SimpleToolkit.UI.WinUI.Helpers/) |
 
 ## Contents
 
@@ -51,5 +52,10 @@ SimpleToolkit is a set of helpers, models, controls, etc. used in my other C# pr
 ### UI.WinUI.Controls
 
 * TimeSpanControl - allows to select TimeSpan
+
+### UI.WinUI.Helpers
+
+* WindowHelper
+    - ShowWindow - Brings window to the front
 
 ![alt text](https://raw.githubusercontent.com/mateuszskoczek/SimpleToolkit/master/.github/images/timespancontrol.png)
